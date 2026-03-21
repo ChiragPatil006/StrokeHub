@@ -1,0 +1,58 @@
+.wb-root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: wbIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes wbIn {
+  from { opacity: 0; transform: scale(1.01); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.wb-body {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+.sync-toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(13,17,23,0.95);
+  border: 1px solid var(--border-bright);
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+  z-index: 500;
+  box-shadow: var(--shadow-deep);
+  animation: toastIn 0.4s ease;
+}
+
+@keyframes toastIn {
+  from { opacity: 0; transform: translateX(-50%) translateY(12px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+.sync-spinner {
+  width: 14px; height: 14px;
+  border: 2px solid var(--accent-dim);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  flex-shrink: 0;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

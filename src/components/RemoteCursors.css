@@ -1,0 +1,34 @@
+.remote-cursors-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  overflow: hidden;
+}
+
+.remote-cursor {
+  position: absolute;
+  transform: translate(-2px, -2px);
+  transition: left 0.08s linear, top 0.08s linear;
+  pointer-events: none;
+}
+
+.cursor-svg {
+  display: block;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+}
+
+.cursor-label {
+  position: absolute;
+  top: 18px;
+  left: 12px;
+  background: var(--ccolor, #7b61ff);
+  color: white;
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 20px;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  letter-spacing: 0.02em;
+}
