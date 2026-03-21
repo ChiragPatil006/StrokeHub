@@ -76,6 +76,3 @@ firebase deploy
 
 ---
 
-## 🎤 Viva talking points
-
-> "This is a real-time event-driven serverless cloud application using Firebase Realtime Database as a managed cloud service. All drawing data is normalized to 0–1 coordinate space before being pushed to the database, ensuring consistent rendering across different screen sizes. We use Firebase's `onValue` listener for event-driven updates, `onDisconnect` for automatic presence cleanup, and server timestamps for consistency. The architecture is fully serverless — no backend, no server, no cost."
