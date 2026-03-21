@@ -1,4 +1,4 @@
-# SyncBoard — Real-time Collaborative Whiteboard
+# StrokeHub — Real-time Collaborative Whiteboard
 
 A cloud-based collaborative whiteboard built with React + Firebase Realtime Database.
 Built for a Cloud Computing course project.
