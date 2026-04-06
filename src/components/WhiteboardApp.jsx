@@ -70,7 +70,7 @@ export default function WhiteboardApp({ session, onLeave }) {
     tc.fillStyle = "#090c10"; tc.fillRect(0, 0, temp.width, temp.height);
     tc.drawImage(canvas, 0, 0);
     const link = document.createElement("a");
-    link.download = `syncboard-${session.roomId}.png`;
+    link.download = `strokehub-${session.roomId}.png`;
     link.href = temp.toDataURL("image/png");
     link.click();
   }, [session.roomId]);

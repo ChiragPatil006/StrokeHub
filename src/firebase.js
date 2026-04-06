@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-//  🔥 PASTE YOUR FIREBASE CONFIG HERE
+//  PASTE YOUR FIREBASE CONFIG HERE
 //  Firebase Console → Project Settings → Your Apps → Web
 // ─────────────────────────────────────────────────────
 import { initializeApp } from "firebase/app";

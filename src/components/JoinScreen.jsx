@@ -44,7 +44,7 @@ export default function JoinScreen({ onJoin }) {
             </svg>
           </div>
           <div>
-            <h1 className="join-title">SYNCBOARD</h1>
+            <h1 className="join-title">STROKEHUB</h1>
             <p className="join-subtitle">Real-time collaborative canvas</p>
           </div>
         </div>
