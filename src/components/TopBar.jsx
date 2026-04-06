@@ -32,7 +32,7 @@ export default function TopBar({ session, myColor, onLeave, onUndo, onRedo, onCl
             <rect x="2" y="20" width="14" height="14" rx="3" fill="var(--accent2)" opacity="0.5"/>
             <rect x="20" y="20" width="14" height="14" rx="3" fill="var(--accent)" opacity="0.4"/>
           </svg>
-          <span className="tb-logo-text">SYNCBOARD</span>
+          <span className="tb-logo-text">STROKEHUB</span>
         </div>
         <div className="tb-divider" />
         <div className="room-chip" onClick={copyRoomId} title="Click to copy">
